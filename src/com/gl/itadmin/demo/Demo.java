@@ -18,17 +18,20 @@ public class Demo {
 		System.out.println("Enter the Department");
 		String department = scr.next();
 		
-		Employee e = new Employee();
-		
 		Employee emp = new Employee(firstName, lastName, department);
 		
+		//set Email of employee using Employee Services
 		EmployeeService esp = new EmployeeService();
 		emp.setEmailId(esp.generateEmailId(emp));
 		
 		
+		//set password of employee using Employee Services
+		emp.setPassword(esp.generatePassword(emp));
 		
 		
+		esp.showCredentials(emp);
 		
+		scr.close();
 		
   
 		}  

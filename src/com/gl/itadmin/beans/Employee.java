@@ -1,6 +1,4 @@
 package com.gl.itadmin.beans;
-import com.gl.itadmin.services.*;
-
 public class Employee {
 	
 	private String firstName;
